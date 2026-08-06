@@ -1,14 +1,16 @@
-# AI Brain Marketplace
+# create-ai-brain
 
-A Claude Code plugin marketplace hosting **create-ai-brain** — a skill that scaffolds a personal "AI Brain" second-brain vault and interviews you to write your IDENTITY / USER / SOUL files.
+A Claude Code plugin marketplace hosting the **create-ai-brain** plugin — a skill that scaffolds a personal "AI Brain" second-brain vault and interviews you to write your IDENTITY / USER / SOUL files.
+
+This one repo is both the marketplace and the plugin. The marketplace and the plugin share the name `create-ai-brain`, so the install command reads `create-ai-brain@create-ai-brain` (plugin @ marketplace).
 
 ## Install (Claude Code)
 
 Add this marketplace, then install the plugin:
 
 ```
-/plugin marketplace add <your-username>/ai-brain-marketplace
-/plugin install create-ai-brain@ai-brain-marketplace
+/plugin marketplace add Nic-Grunklee/create-ai-brain
+/plugin install create-ai-brain@create-ai-brain
 ```
 
 The first command accepts a GitHub `owner/repo`, a full Git URL, or a local path. After installing, if Claude Code says `Run /reload-plugins to activate`, run that.
@@ -29,16 +31,14 @@ Use the plugin browser in the desktop app, or install the skill directly: grab `
 
 An 8-area markdown vault (People, Projects, Decisions, Companies, Meetings, Daily, Knowledge, plus Capture / Clippings / Books / MOC / Archives / System), four system prompts (Meeting Extraction, Nightly Consolidation, Book Processing, Todos), note templates, a full Books pipeline, and the auto-loading `CLAUDE.md` / `AGENTS.md`. It's plain markdown and works anywhere; open it in Obsidian (with the Tasks plugin) for linking and the live todo dashboard.
 
-## Before you publish
+## Publishing / updating
 
-1. Replace `<your-username>` above and the `owner.url` in `.claude-plugin/marketplace.json` with your GitHub handle.
-2. Push this repo to a **public** GitHub repository named `ai-brain-marketplace`.
-3. Share the two install commands. Users refresh with `/plugin marketplace update ai-brain-marketplace` after you push updates.
+Push this repo to your public GitHub repository `Nic-Grunklee/create-ai-brain`, then share the two install commands above. When you change the skill, bump `version` in both `marketplace.json` and `plugins/create-ai-brain/.claude-plugin/plugin.json` and push — users pull it with `/plugin marketplace update create-ai-brain`.
 
 ## Repo layout
 
 ```
-ai-brain-marketplace/
+create-ai-brain/
 ├── .claude-plugin/
 │   └── marketplace.json          # catalog: lists the create-ai-brain plugin
 ├── plugins/
@@ -53,7 +53,3 @@ ai-brain-marketplace/
 │               └── reference/       # identity-interview guide
 └── README.md
 ```
-
-## Versioning
-
-Bump `version` in both `marketplace.json` and `plugins/create-ai-brain/.claude-plugin/plugin.json` when you change the skill, so users get the update on their next `/plugin marketplace update`.

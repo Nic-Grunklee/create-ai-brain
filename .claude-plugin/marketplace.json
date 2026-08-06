@@ -1,8 +1,8 @@
 {
-  "name": "ai-brain-marketplace",
+  "name": "create-ai-brain",
   "owner": {
     "name": "Nic",
-    "url": "https://github.com/<your-username>/ai-brain-marketplace"
+    "url": "https://github.com/Nic-Grunklee/create-ai-brain"
   },
   "plugins": [
     {
