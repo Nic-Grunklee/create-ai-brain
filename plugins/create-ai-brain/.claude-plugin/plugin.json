@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "create-ai-brain",
+  "displayName": "Create AI Brain",
+  "version": "1.0.0",
+  "description": "Scaffolds a personal AI Brain second-brain vault (folders, four system prompts, templates, Books pipeline) and runs a live interview to write your IDENTITY / USER / SOUL files.",
+  "author": { "name": "Nic" },
+  "keywords": ["second-brain", "obsidian", "notes", "pkm", "vault", "identity"]
+}
