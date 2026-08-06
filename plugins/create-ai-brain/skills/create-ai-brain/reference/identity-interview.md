@@ -6,7 +6,9 @@ The origin prompt (from Dan Martell's "This AI Brain Will Make You So Smart It's
 
 > Interview me about how I work, what I value, how I communicate, and what I want from an AI assistant. Then draft my USER, SOUL, and IDENTITY files.
 
-This skill runs that interview live rather than dumping a blank questionnaire. Conduct it as a real conversation: ask a few questions at a time, follow up on anything thin or generic, and keep going until you have concrete, specific material — not platitudes. Then draft all three files and let the owner edit.
+This skill runs that interview live rather than dumping a blank questionnaire. Conduct it as a real conversation, then draft all three files and let the owner edit.
+
+**Pacing — ask in small batches, one section at a time.** Send 2–4 related questions per turn, grouped by the file they feed (Identity → Work style → Values). Don't ask all of them at once (it overwhelms people and produces shallow, list-style answers) and don't ask strictly one at a time (it turns a short interview into a tedious slog). After each batch, follow up on anything thin or generic *before* moving to the next section, and keep pushing until the material is concrete and specific — not platitudes.
 
 ## What each file is for
 
@@ -16,7 +18,7 @@ This skill runs that interview live rather than dumping a blank questionnaire. C
 
 ## Interview questions
 
-Work through these in conversation. Don't just read them off — dig where answers are vague. Group them so you're not firing all of them at once.
+Work through these in conversation, one section per batch (2–4 questions at a time — see Pacing above). Don't just read them off — dig where answers are vague before moving on.
 
 ### Identity (→ IDENTITY.md)
 1. What's your name, and what should the assistant call you?

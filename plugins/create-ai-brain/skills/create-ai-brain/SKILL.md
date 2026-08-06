@@ -74,7 +74,7 @@ Don't rewrite these files' contents — copy them verbatim. They reference each 
 
 ### 4. Run the identity interview
 
-This is the important part — it's what makes the vault personal. Open `reference/identity-interview.md` in this skill and follow it: interview the owner about how they work, what they value, how they communicate, and what they want from an AI assistant. Ask a few questions at a time, follow up when answers are thin or generic, and keep pushing until the material is specific.
+This is the important part — it's what makes the vault personal. Open `reference/identity-interview.md` in this skill and follow it: interview the owner about how they work, what they value, how they communicate, and what they want from an AI assistant. Ask in small batches — 2–4 related questions per turn, one section at a time — and follow up on thin or generic answers before moving on, rather than asking everything at once or one question at a time.
 
 Then draft `IDENTITY.md`, `USER.md`, and `SOUL.md` using the formats in that reference file. Show the drafts, invite edits, and only write the final versions into the vault root once the owner is happy. These three files are read at the start of every session, so keep them tight and concrete.
 
@@ -82,7 +82,7 @@ Then draft `IDENTITY.md`, `USER.md`, and `SOUL.md` using the formats in that ref
 
 `CLAUDE.md` and `AGENTS.md` are written generically ("the vault owner"). If the owner wants, swap in their name. Everything else in them is structural and stays as-is.
 
-### 6. Explain the workflows and offer automation
+### 6. Explain the workflows
 
 Give a short tour of the four routines so they know what they now have:
 
@@ -91,7 +91,18 @@ Give a short tour of the four routines so they know what they now have:
 - **Book Processing** (`System/Book Processing Prompt.md`) — run after finishing a book to shortlist ideas worth promoting into `Knowledge/` and seed blog-post angles.
 - **Todos** (`Todos.md` + `System/Todos Setup.md`) — a live dashboard; requires the Obsidian **Tasks** plugin (one-minute install, steps in the setup file).
 
-Point out that files/folders prefixed with "Example" are illustrative and safe to delete, but their format should be matched when creating real notes. Then offer to schedule the nightly consolidation as a recurring evening task so the vault self-maintains, and offer to walk them through installing the Tasks plugin.
+Point out that files/folders prefixed with "Example" are illustrative and safe to delete, but their format should be matched when creating real notes. Also offer to walk them through installing the Obsidian **Tasks** plugin so the `Todos.md` dashboard works.
+
+### 7. Offer to schedule the nightly run — always do this
+
+Don't let this be optional-sounding or skip it. The vault only stays clean if consolidation actually runs, so before you finish, explicitly ask whether to set it up to run automatically — e.g. "Want me to set up the nightly consolidation to run on its own each evening so the vault self-maintains?"
+
+If yes, open this skill's `reference/scheduling-nightly.md` (skill-internal guidance — this is deliberately **not** copied into the vault) and set it up the easy way for their environment:
+
+- **Desktop app / Cowork:** register a recurring scheduled task (e.g. every evening at 10pm) that runs the Nightly Consolidation Prompt against this vault. This is the default — do it for them rather than just describing it.
+- **Claude Code CLI:** walk them through the cron / launchd / Task Scheduler option in that reference, including pre-approving file permissions for unattended runs.
+
+If they decline, tell them they can run `System/Nightly Consolidation Prompt.md` by hand any time and can ask you to set up the automatic schedule later — don't leave a scheduling file behind in the vault.
 
 ## Design principles (keep these intact)
 
